@@ -1,7 +1,7 @@
 
 import cart2 from "../assets/cart2.svg"
 
-const CartWidge = ()=>{
+const CartWidget = ()=>{
     return(
 
         <>
@@ -14,4 +14,4 @@ const CartWidge = ()=>{
     )
 }
 
-export default CartWidge;
+export default CartWidget;
