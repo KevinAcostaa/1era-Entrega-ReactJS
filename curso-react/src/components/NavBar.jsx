@@ -23,16 +23,16 @@ const NavBar = () => {
                     <div className="col">
                         <ul className="nav justify-content-center">
                             <li className="nav-item">
-                                <NavLink className="nav-link text-black" to={"/"}>INICIO</NavLink>
+                                <NavLink className="nav-link text-black nav-link2" to={"/"}>INICIO</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link text-black" to={"/category/camperas"}>CAMPERAS</NavLink>
+                                <NavLink className="nav-link text-black nav-link2" to={"/category/camperas"}>CAMPERAS</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link text-black" to={"/category/calzado"}>CALZADO</NavLink>
+                                <NavLink className="nav-link text-black nav-link2" to={"/category/calzado"}>CALZADO</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link text-black" to={"/category/remeras"}>REMERAS</NavLink>
+                                <NavLink className="nav-link text-black nav-link2" to={"/category/remeras"}>REMERAS</NavLink>
                             </li>
                         </ul>
                     </div>

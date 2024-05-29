@@ -1,17 +1,19 @@
+import { Link } from "react-router-dom";
+import cart from "../assets/cart2.svg";
+import { CartContext } from "./context/CartContext";
+import { useContext } from "react";
 
-import cart2 from "../assets/cart2.svg"
+const CartWidget = () => {
+    const {getCountProducts} = useContext(CartContext);
 
-const CartWidget = ()=>{
-    return(
-
-        <>
-            <button type="button" className="btn btn-light position-relative">
-                <img src={cart2} alt="Carrito" width={20} />
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">99+</span>
-            </button>
-        </>
-
-    )
+    if (getCountProducts() > 0) {
+        return (
+            <Link to={"/Cart"} className="btn btn-light position-relative">
+                <img src={cart} alt="Carrito" width={16} />
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-black">{getCountProducts()}</span>
+            </Link>
+        )
+    }
 }
 
 export default CartWidget;

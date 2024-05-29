@@ -5,3 +5,19 @@
     font-size: 12px;
     text-transform: uppercase;
 }
+
+
+.nav-link2 {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.nav-link2:hover,.nav-link2:focus,.nav-link2:active {
+    background-color: #959595;
+    color: #fff;
+    border-radius: 10px;
+}
